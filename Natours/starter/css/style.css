@@ -34,6 +34,17 @@ body {
     url('../img/hero.jpg');
   background-size: cover;
   background-position: top;
+  position: relative;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;  /* counts from top of relatively-positioned parent element */
+  left: 40px;  /* counts from left of relatively-positioned parent element */
+}
+
+.logo {
+  height: 35px;  /* width will scale according to image aspect ratio */
 }
