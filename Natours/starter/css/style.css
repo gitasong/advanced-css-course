@@ -49,6 +49,13 @@ body {
   height: 35px;  /* width will scale according to image aspect ratio */
 }
 
+.text-box {
+  position: absolute;  /* needed to use top and left properties */
+  top: 45%;  /* positions box at 45% from top of parent (less than 50% b/c of wedge) */
+  left: 50%;  /* positions box at 50% from left of parent */
+  transform: translate(-50%, -50%);  /* shifts box up and left by 50% of its width and height for perfect centering */
+}
+
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
