@@ -45,6 +45,11 @@ body {
   left: 40px;  /* counts from left of relatively-positioned parent element */
 }
 
+/* sample logo animation using logo-box */
+.logo-box:hover .logo {
+  animation: moveInRight 1s ease-out;
+}
+
 .logo {
   height: 35px;  /* width will scale according to image aspect ratio */
 }
