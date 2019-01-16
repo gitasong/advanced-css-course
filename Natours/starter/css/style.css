@@ -59,6 +59,7 @@ body {
   top: 45%;  /* positions box at 45% from top of parent (less than 50% b/c of wedge) */
   left: 50%;  /* positions box at 50% from left of parent */
   transform: translate(-50%, -50%);  /* shifts box up and left by 50% of its width and height for perfect centering */
+  text-align: center;
 }
 
 .heading-primary {
@@ -66,6 +67,7 @@ body {
   text-transform: uppercase;
 
   backface-visibility: hidden;  /* fix for slight shake at end of animation; hides border box? */
+  margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -91,6 +93,31 @@ body {
   font-weight: 700;
   letter-spacing: 17.4px;
   animation: moveInRight 1s ease-out;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
 }
 
 @keyframes moveInLeft {
