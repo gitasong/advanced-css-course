@@ -10,7 +10,9 @@ Dark green: #28b485
 /*
 BROWSER RESET
 */
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;  /* box-sizing is not normally inherited. This will cause it to be */
