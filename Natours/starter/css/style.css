@@ -13,9 +13,9 @@ BROWSER RESET
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
+  box-sizing: inherit;  /* box-sizing is not normally inherited. This will cause it to be */
+}                       /* inherited for all elements from the body element, which is now set */
+                        /* to border-box */
 html {
   font-size: 62.5%;  /* changes base font size to 62.5% of browser's root font size (16px) */
 }                      /* for a computed value of 10px. This way, user will still be able to */
@@ -27,6 +27,8 @@ body {
   line-height: 1.7;
   color: #777;
   padding: 3rem;
+
+  box-sizing: border-box;
 }
 
 .header {
