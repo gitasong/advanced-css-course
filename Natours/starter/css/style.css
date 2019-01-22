@@ -17,9 +17,9 @@ BROWSER RESET
 }
 
 html {
-  font-size: 10px;
-}
-
+  font-size: 62.5%;  /* changes base font size to 62.5% of browser's root font size (16px) */
+}                      /* for a computed value of 10px. This way, user will still be able to */
+                        /* adjust the root font size of their browser */
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
